@@ -1,0 +1,28 @@
+.logo {
+  width: 7rem;
+  height: 4rem;
+  margin-left: 5rem;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+}
+
+.item_container {
+  display: flex;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.header_item {
+  margin-right: 2rem;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

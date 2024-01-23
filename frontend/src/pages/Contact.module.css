@@ -1,0 +1,8 @@
+.contact {
+  padding: 3rem 10rem;
+}
+
+.flex_container {
+  display: flex;
+  justify-content: space-evenly;
+}
