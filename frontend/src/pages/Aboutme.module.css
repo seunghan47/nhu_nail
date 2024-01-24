@@ -17,3 +17,15 @@
   width: 20rem;
   height: 20rem;
 }
+
+.flex_item {
+  padding-right: 5rem;
+}
+
+.span {
+  color: #ec9131;
+}
+
+.vietnamese {
+  border-radius: 10%;
+}

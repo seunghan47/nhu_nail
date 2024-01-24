@@ -42,15 +42,3 @@ input {
   background-color: rgb(238, 238, 238);
   padding-left: 1rem;
 }
-
-.button {
-  background-color: #79c141;
-  color: white;
-  width: 10rem;
-  height: 3rem;
-}
-
-.button:hover {
-  background-color: #ec9131;
-  cursor: pointer;
-}

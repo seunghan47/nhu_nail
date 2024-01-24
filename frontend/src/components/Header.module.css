@@ -7,7 +7,7 @@
 .nav_container {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 0.5rem 2rem;
   align-items: center;
 }
 

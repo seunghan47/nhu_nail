@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.css";
+import Button from "../components/Button";
 const Contact = () => {
   return (
     <div className={styles.contact}>
@@ -59,12 +60,7 @@ const Contact = () => {
             name='message'
           />
         </div>
-        <button
-          className={styles.button}
-          type='button'
-        >
-          Send!
-        </button>
+        <Button>Contact me!</Button>
       </form>
     </div>
   );

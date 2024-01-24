@@ -1,10 +1,11 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Appointment from "./pages/Appointment";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Aboutme from "./pages/Aboutme";
 import Root from "./pages/Root";
 import Home from "./pages/Home";
 import "./App.css";
-import Aboutme from "./pages/Aboutme";
-import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -12,9 +13,10 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       { index: true, element: <Home /> },
-      { path: "/appointment", element: <Appointment /> },
+      { path: "/Appointment", element: <Appointment /> },
       { path: "/About", element: <Aboutme /> },
       { path: "/Contact", element: <Contact /> },
+      { path: "/Services", element: <Services /> },
     ],
   },
 ]);

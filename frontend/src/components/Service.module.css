@@ -1,0 +1,22 @@
+.flex_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image {
+  width: 35rem;
+  height: 35rem;
+  margin: 2rem;
+  border-radius: 10%;
+}
+
+.title {
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+.description {
+  font-size: 1.3rem;
+  margin: 2rem;
+}

@@ -16,25 +16,16 @@ const Header = () => {
           <li className={styles.header_item}>
             <NavLink
               className={({ isActive }) => (isActive ? styles.active_link : undefined)}
-              to='./'
+              to='./Appointment'
               end
             >
-              Book a reservation
+              Book an appointment
             </NavLink>
           </li>
           <li className={styles.header_item}>
             <NavLink
               className={({ isActive }) => (isActive ? styles.active_link : undefined)}
-              to='./'
-              end
-            >
-              1 more element
-            </NavLink>
-          </li>
-          <li className={styles.header_item}>
-            <NavLink
-              className={({ isActive }) => (isActive ? styles.active_link : undefined)}
-              to='./'
+              to='./Services'
               end
             >
               Services
@@ -60,6 +51,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <hr />
     </header>
   );
 };
