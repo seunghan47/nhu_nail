@@ -41,7 +41,6 @@ input {
   height: 100%;
   background-color: rgb(238, 238, 238);
   padding-left: 1rem;
-  resize: none; /* Optional: Prevent textarea resizing */
 }
 
 .button {

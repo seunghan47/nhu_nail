@@ -1,30 +1,62 @@
 import styles from "./Header.module.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <header>
       <nav className={styles.nav_container}>
-        <img
-          className={styles.logo}
-          src='logoNoBg.png'
-          alt='logo'
-        />
+        <Link to='/'>
+          <img
+            className={styles.logo}
+            src='logoNoBg.png'
+            alt='logo'
+          />
+        </Link>
         <ul className={styles.item_container}>
           <li className={styles.header_item}>
-            <Link to='./'>Book a reservation</Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? styles.active_link : undefined)}
+              to='./'
+              end
+            >
+              Book a reservation
+            </NavLink>
           </li>
           <li className={styles.header_item}>
-            <Link to='./'>1 more element</Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? styles.active_link : undefined)}
+              to='./'
+              end
+            >
+              1 more element
+            </NavLink>
           </li>
           <li className={styles.header_item}>
-            <Link to='./'>Services</Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? styles.active_link : undefined)}
+              to='./'
+              end
+            >
+              Services
+            </NavLink>
           </li>
           <li className={styles.header_item}>
-            <Link to='./Contact'>Contact</Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? styles.active_link : undefined)}
+              to='./Contact'
+              end
+            >
+              Contact
+            </NavLink>
           </li>
           <li className={styles.header_item}>
-            <Link to='./About'>About me</Link>
+            <NavLink
+              className={({ isActive }) => (isActive ? styles.active_link : undefined)}
+              to='./About'
+              end
+            >
+              About me
+            </NavLink>
           </li>
         </ul>
       </nav>
