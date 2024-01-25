@@ -5,7 +5,6 @@ import Contact from "./pages/Contact";
 import Aboutme from "./pages/Aboutme";
 import Root from "./pages/Root";
 import Home from "./pages/Home";
-import "./App.css";
 
 const router = createBrowserRouter([
   {

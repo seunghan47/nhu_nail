@@ -17,24 +17,38 @@ const works = [
 
 const Home = () => {
   return (
-    <div className={styles.home}>
-      <img
-        className={styles.background}
-        // src='background.png'
-        alt='someone doing nail'
-      />
-      <h1>Hi I'm Nhu! </h1>
-
-      <h1>Some of my works!</h1>
-      <div className={styles.grid_container}>
-        {works.map((work) => (
-          <Work
-            image={work.image}
-            alt={work.alt}
-          />
-        ))}
+    <div className={styles.image_container}>
+      <div className={styles.flex_container}>
+        <img
+          className={styles.background}
+          src='wallpaper.avif'
+          alt=''
+        />
+        <img
+          className={styles.background}
+          src='wallpaper2.avif'
+          alt=''
+        />
+        <img
+          className={styles.background}
+          src='wallpaper3.avif'
+          alt=''
+        />
       </div>
-      <Button>Book now!</Button>
+      <div className={styles.home}>
+        <h1>Hi I'm Nhu! </h1>
+
+        <h1>Some of my works!</h1>
+        <div className={styles.grid_container}>
+          {works.map((work) => (
+            <Work
+              image={work.image}
+              alt={work.alt}
+            />
+          ))}
+        </div>
+        <Button>Book now!</Button>
+      </div>
     </div>
   );
 };
