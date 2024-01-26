@@ -5,6 +5,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 @Entity
 public class Customer {
 
@@ -13,6 +16,21 @@ public class Customer {
     private int id;
     private int number;
     private String name;
+    private LocalDateTime reservationDateTime;
+
+    public String getFormattedReservationDateTime() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd HH");
+        return reservationDateTime.format(formatter);
+    }
+
+    public void setReservationDateTime(LocalDateTime reservationDateTime) {
+        this.reservationDateTime = reservationDateTime;
+    }
+
+    public LocalDateTime getReservationDateTime() {
+        return reservationDateTime;
+    }
+
 
     public Customer() {
     }
