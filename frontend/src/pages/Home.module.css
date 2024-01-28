@@ -15,15 +15,20 @@
 
 .home {
   padding: 3rem 10rem;
-  font-size: 3rem;
-  background-color: #98d3df;
   color: black;
+  font-size: 1.2rem;
   text-align: center;
 }
-
+.home p {
+  font-family: "Single Day", cursive;
+  margin-bottom: 5rem;
+}
 .home button {
-  width: 10rem;
+  width: 15rem;
   height: 3rem;
+  font-size: 2rem;
+  border-radius: 10%;
+  /* font-family: "Single Day", cursive; */
 }
 
 .grid_container {
@@ -31,5 +36,10 @@
   justify-content: space-evenly;
   grid-template-columns: 20% 20% 20%;
   row-gap: 3rem;
+  margin-bottom: 5rem;
   /* grid-template-rows: repeat(3, 20%); */
+}
+
+.span {
+  color: #ec9131;
 }

@@ -1,23 +1,35 @@
-import React, { useState } from "react";
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
-import styles from "./Calendar.module.css";
+import React, { useEffect, useState } from "react";
+// import styles from "./Calendar.module.css";
 
 const Calendar = () => {
-  const [date, setDate] = useState(new Date());
+  // const [availableDates, setAvailableDates] = useState([]);
+  const [customers, setCustomers] = useState([]);
+  // const [selectedDate, setSelectedDate] = useState(null);
 
-  const onChange = (selectedDate) => {
-    setDate(selectedDate);
-  };
+  useEffect(() => {
+    const fetchAvailableDates = async () => {
+      try {
+        const response = await fetch("http://localhost:8080/customer/getAll");
+        const customers = response.data;
+        setCustomers(customers || []);
+        // console.log("response: " + response);
+        // console.log("Status Code:", response.status);
+        // console.log("Headers:", response.headers);
+        // console.log("Data:", response.data);
+      } catch (error) {
+        alert("hi");
+        console.error("Error fetching available dates: !!!!!", error);
+      }
+    };
 
+    fetchAvailableDates();
+  }, []);
   return (
-    <div className={styles.calendar}>
-      <h2>My Calendar</h2>
-      <Calendar
-        onChange={onChange}
-        value={date}
-        defaultActiveStartDate
-      />
+    <div>
+      {customers.map((customer) => (
+        <h1>{JSON.stringify(customer)}</h1>
+      ))}
+      <h1>Hello World</h1>
     </div>
   );
 };

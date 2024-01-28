@@ -67,3 +67,8 @@ const Contact = () => {
 };
 
 export default Contact;
+
+/**
+ *
+ * logic that connects backend.
+ */

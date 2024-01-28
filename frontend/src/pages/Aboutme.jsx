@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Aboutme.module.css";
 import Button from "../components/Button";
+
 const Aboutme = () => {
+  function handlePost() {
+    const object = { name: "post", number: 1, reservationDateTime: "" };
+    const tryFetch = async () => {
+      try {
+        const response = await fetch("https://localhost:8080/customer/add", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(object),
+        });
+
+        if (response.ok) {
+          const responseData = await response.json();
+          console.log(responseData);
+        } else {
+          console.log("error");
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    tryFetch();
+  }
+  useEffect(handlePost, []);
   return (
     <div className={styles.about}>
       <h1 className={styles.title}>About me</h1>

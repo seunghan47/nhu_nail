@@ -46,10 +46,4 @@ public class CustomerServiceImpl implements CustomerService {
                 .filter(dateTime -> !bookedDates.contains(dateTime) && dateTime.getHour() <= 18)
                 .collect(Collectors.toList());
     }
-
-
-
-
-
-
 }
