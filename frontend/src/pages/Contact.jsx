@@ -1,10 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Contact.module.css";
 import Button from "../components/Button";
+
 const Contact = () => {
+  // const [form, setFormInfo] = useState({
+  //   name: "",
+  //   email: "",
+  //   number: "",
+  //   subject: "",
+  //   message: "",
+  // });
+  const [results, setResult] = useState([]);
+  async function onFormSubmit(e) {
+    e.preventDefault();
+
+    // const fd = new FormData(e.target);
+    // const data = Object.fromEntries(fd.entries());
+
+    // try {
+    //   const response = await fetch("http://localhost:8080/message/add", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(data),
+    //   });
+
+    //   if (!response.ok) {
+    //     throw new Error("error sending form");
+    //   }
+    //   const responseData = await response.json();
+    //   console.log(responseData);
+    // } catch (error) {
+    //   console.log("Error: " + error.message);
+    // }
+
+    try {
+      const getResponse = await fetch("http://localhost:8080/message/getMessage");
+
+      if (!getResponse.ok) {
+        console.log(getResponse);
+        throw new Error("fetch unsuccessful");
+      }
+      const data = await getResponse.json();
+      // console.log(data);
+      setResult(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div className={styles.contact}>
-      <form>
+      <form onSubmit={onFormSubmit}>
         <h3>
           <span className={styles.title}>Have Questions ? </span>
         </h3>
@@ -36,7 +84,7 @@ const Contact = () => {
             placeholder='111-111-1111'
             id='number'
             type='text'
-            name='number'
+            name='phone_number'
           />
         </div>
 
@@ -62,6 +110,19 @@ const Contact = () => {
         </div>
         <Button>Contact me!</Button>
       </form>
+      {/* <h1>
+        {results.map((result) => {
+          return (
+            <div key={result.id}>
+              <h1>{result.name}</h1>
+              <p>{result.email}</p>
+              <p>{result.phone_number}</p>
+              <p>{result.message}</p>
+              <p>{result.id}</p>
+            </div>
+          );
+        })}
+      </h1> */}
     </div>
   );
 };
