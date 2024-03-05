@@ -1,6 +1,8 @@
 .contact {
-  padding: 3rem 25rem;
+  padding: 3rem 5rem;
   background-color: bisque;
+  width: auto;
+  font-family: sans-serif;
 }
 
 .title {
@@ -26,7 +28,7 @@ label {
 
 input {
   margin-bottom: 2rem;
-  width: 100%;
+  width: 50%;
   height: 2.5rem;
   background-color: rgb(238, 238, 238);
   padding-left: 1rem;
@@ -37,7 +39,7 @@ input {
   padding-top: 1rem;
   display: block;
   margin-bottom: 2rem;
-  width: 100%;
+  width: 50%;
   height: 100%;
   background-color: rgb(238, 238, 238);
   padding-left: 1rem;

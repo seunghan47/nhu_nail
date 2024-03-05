@@ -2,6 +2,27 @@ import React from "react";
 import styles from "./Services.module.css";
 import Service from "../components/Service";
 import Button from "../components/Button";
+
+const Services = () => {
+  return (
+    <div className={styles.services}>
+      <h1>Available Services! </h1>
+      {services.map((service) => (
+        <Service
+          id={service.id}
+          title={service.title}
+          image={service.image}
+          description={service.description}
+        />
+      ))}
+
+      <Button>Book Today!</Button>
+    </div>
+  );
+};
+
+export default Services;
+
 const services = [
   {
     id: 1,
@@ -29,23 +50,3 @@ const services = [
     description: "Get the nail extension of your choice with either the gel or the acrylics",
   },
 ];
-
-const Services = () => {
-  return (
-    <div className={styles.services}>
-      <h1>Available Services! </h1>
-      {services.map((service) => (
-        <Service
-          id={service.id}
-          title={service.title}
-          image={service.image}
-          description={service.description}
-        />
-      ))}
-
-      <Button>Book Today!</Button>
-    </div>
-  );
-};
-
-export default Services;

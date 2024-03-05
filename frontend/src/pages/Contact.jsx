@@ -3,37 +3,30 @@ import styles from "./Contact.module.css";
 import Button from "../components/Button";
 
 const Contact = () => {
-  // const [form, setFormInfo] = useState({
-  //   name: "",
-  //   email: "",
-  //   number: "",
-  //   subject: "",
-  //   message: "",
-  // });
   const [results, setResult] = useState([]);
   async function onFormSubmit(e) {
     e.preventDefault();
 
-    // const fd = new FormData(e.target);
-    // const data = Object.fromEntries(fd.entries());
+    const fd = new FormData(e.target);
+    const data = Object.fromEntries(fd.entries());
 
-    // try {
-    //   const response = await fetch("http://localhost:8080/message/add", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(data),
-    //   });
+    try {
+      const response = await fetch("http://localhost:8080/message/add", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    //   if (!response.ok) {
-    //     throw new Error("error sending form");
-    //   }
-    //   const responseData = await response.json();
-    //   console.log(responseData);
-    // } catch (error) {
-    //   console.log("Error: " + error.message);
-    // }
+      if (!response.ok) {
+        throw new Error("error sending form");
+      }
+      const responseData = await response.json();
+      console.log(responseData);
+    } catch (error) {
+      console.log("Error: " + error.message);
+    }
 
     try {
       const getResponse = await fetch("http://localhost:8080/message/getMessage");
@@ -43,7 +36,6 @@ const Contact = () => {
         throw new Error("fetch unsuccessful");
       }
       const data = await getResponse.json();
-      // console.log(data);
       setResult(data);
     } catch (error) {
       console.log(error);
@@ -56,7 +48,6 @@ const Contact = () => {
         <h3>
           <span className={styles.title}>Have Questions ? </span>
         </h3>
-        <h3>{/* <span className={styles.sub_title}>Don't hesitate to Reach out! </span> */}</h3>
 
         <div className='control'>
           <label htmlFor='name'>Name</label>
@@ -65,6 +56,7 @@ const Contact = () => {
             type='text'
             id='name'
             name='name'
+            required
           />
         </div>
 
@@ -75,6 +67,7 @@ const Contact = () => {
             id='email'
             type='email'
             name='email'
+            required
           />
         </div>
 
@@ -83,8 +76,9 @@ const Contact = () => {
           <input
             placeholder='111-111-1111'
             id='number'
-            type='text'
+            type='tel'
             name='phone_number'
+            required
           />
         </div>
 
@@ -95,6 +89,7 @@ const Contact = () => {
             id='subject'
             type='text'
             name='subject'
+            required
           />
         </div>
 
@@ -106,11 +101,20 @@ const Contact = () => {
             id='message'
             type='text'
             name='message'
+            required
           />
         </div>
         <Button>Contact me!</Button>
       </form>
-      {/* <h1>
+
+      {/**
+       *
+       * below is displaying the fetched request from the backend.
+       * the data is saved in [result] useState
+       *
+       */}
+
+      <h1>
         {results.map((result) => {
           return (
             <div key={result.id}>
@@ -122,14 +126,9 @@ const Contact = () => {
             </div>
           );
         })}
-      </h1> */}
+      </h1>
     </div>
   );
 };
 
 export default Contact;
-
-/**
- *
- * logic that connects backend.
- */
