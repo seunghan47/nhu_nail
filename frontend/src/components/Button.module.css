@@ -1,10 +1,11 @@
 .button {
   background-color: #ec9131;
   color: white;
-  width: 20rem;
-  height: 3rem;
-  font-size: 1.2rem;
   text-transform: uppercase;
+  width: 25rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 2rem;
 }
 
 .button:hover {

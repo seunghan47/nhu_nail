@@ -19,17 +19,11 @@
   color: black;
   font-size: 1.2rem;
   text-align: center;
+  background-color: white;
 }
 .home p {
   font-family: "Single Day", cursive;
   margin-bottom: 3rem;
-}
-.home button {
-  width: 15rem;
-  height: 3rem;
-  font-size: 2rem;
-  border-radius: 10%;
-  /* font-family: "Single Day", cursive; */
 }
 
 .grid_container {

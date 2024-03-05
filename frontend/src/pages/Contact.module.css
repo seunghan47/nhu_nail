@@ -1,8 +1,14 @@
+.form {
+  margin-right: 13rem;
+}
+
 .contact {
   padding: 3rem 5rem;
-  background-color: bisque;
+  background-color: rgb(236, 235, 232);
   width: auto;
   font-family: sans-serif;
+  display: flex;
+  justify-content: space-around;
 }
 
 .title {
@@ -26,9 +32,10 @@ label {
   font-size: 1rem;
 }
 
-input {
+.form input,
+.form textarea {
   margin-bottom: 2rem;
-  width: 50%;
+  width: 100%;
   height: 2.5rem;
   background-color: rgb(238, 238, 238);
   padding-left: 1rem;
@@ -43,4 +50,10 @@ input {
   height: 100%;
   background-color: rgb(238, 238, 238);
   padding-left: 1rem;
+}
+
+.image {
+  max-height: fit-content;
+  max-width: 40rem;
+  background-color: transparent;
 }

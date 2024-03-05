@@ -1,10 +1,18 @@
 .services {
   padding: 3rem 10rem;
   text-align: center;
+  background-color: rgb(236, 235, 232);
 }
 
 .services h1 {
   font-size: 4rem;
   color: #ec9131;
   font-family: "Single Day", cursive;
+}
+
+.service_container {
+  background-color: #f7f7f7;
+  align-items: center;
+  padding: 2rem 5rem;
+  text-align: center;
 }

@@ -31,7 +31,7 @@ const Home = () => {
           Discover the art of beautiful nails with our expert services, including pedicures, manicures, nail extensions,
           and stunning nail art
         </p>
-        <Button>Book Here!</Button>
+        <Button className={styles.button}>Book Here!</Button>
       </div>
     </div>
   );
