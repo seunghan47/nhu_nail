@@ -15,34 +15,21 @@
   display: flex;
   list-style: none;
   font-size: 1.2rem;
+  justify-content: space-evenly;
 }
 
-a {
+.item_container a.active,
+.item_container a:hover {
+  color: #e78925;
+}
+
+.header_item a {
+  list-style: none;
   text-decoration: none;
   color: inherit;
 }
-
 .header_item {
-  position: relative;
-  margin-right: 2rem;
+  color: black;
   text-transform: uppercase;
-  overflow: hidden;
-}
-
-.header_item::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background-color: #ec9131;
-  bottom: 0;
-  left: 0;
-  transition: width 0.3s;
-}
-
-.header_item:hover::after,
-.header_item:focus::after,
-.header_item:visited::after,
-.header_item:active::after {
-  width: 50%;
+  margin-right: 2rem;
 }

@@ -15,8 +15,8 @@ const Header = () => {
         <ul className={styles.item_container}>
           <li className={styles.header_item}>
             <NavLink
-              className={({ isActive }) => (isActive ? styles.active_link : undefined)}
-              to='./Appointment'
+              className={({ isActive }) => (isActive ? styles.active : undefined)}
+              to='Appointment'
               end
             >
               Book an appointment
@@ -24,8 +24,8 @@ const Header = () => {
           </li>
           <li className={styles.header_item}>
             <NavLink
-              className={({ isActive }) => (isActive ? styles.active_link : undefined)}
-              to='./Services'
+              className={({ isActive }) => (isActive ? styles.active : undefined)}
+              to='Services'
               end
             >
               Services
@@ -33,8 +33,8 @@ const Header = () => {
           </li>
           <li className={styles.header_item}>
             <NavLink
-              className={({ isActive }) => (isActive ? styles.active_link : undefined)}
-              to='./Contact'
+              className={({ isActive }) => (isActive ? styles.active : undefined)}
+              to='Contact'
               end
             >
               Contact
@@ -42,8 +42,8 @@ const Header = () => {
           </li>
           <li className={styles.header_item}>
             <NavLink
-              className={({ isActive }) => (isActive ? styles.active_link : undefined)}
-              to='./About'
+              className={({ isActive }) => (isActive ? styles.active : undefined)}
+              to='About'
               end
             >
               About me

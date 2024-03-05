@@ -4,6 +4,7 @@
   width: 20rem;
   height: 3rem;
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .button:hover {
