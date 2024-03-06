@@ -89,3 +89,17 @@
   padding: 7rem 4rem;
   text-align: center;
 }
+
+.book h1 {
+  font-size: 3rem;
+}
+
+.book a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wait {
+  font-size: 5rem;
+  color: #ec9131;
+}

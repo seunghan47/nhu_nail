@@ -108,7 +108,7 @@ const Contact = () => {
             required
           />
         </div>
-        <Button>Contact me!</Button>
+        <Button>Send Message!</Button>
       </Form>
 
       <img
@@ -117,7 +117,7 @@ const Contact = () => {
         className={styles.image}
       ></img>
 
-      <h1>
+      {/* <h1>
         {results.map((result) => {
           return (
             <div key={result.id}>
@@ -129,7 +129,7 @@ const Contact = () => {
             </div>
           );
         })}
-      </h1>
+      </h1> */}
     </div>
   );
 };

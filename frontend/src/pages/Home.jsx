@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Home.module.css";
 import Button from "../components/Button";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // import Work from "../components/Work";
 
 const Home = () => {
@@ -74,8 +74,14 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.book}>
-        <h1>What are you waiting for ! Book an appointment with me now !</h1>
-        <Button>Book Here!</Button>
+        <h1>
+          <span className={styles.wait}>What are you waiting for ! </span>
+          <br />
+          Book an Appointment Now !
+        </h1>
+        <Button>
+          <NavLink to='/Appointment'>Book Here!</NavLink>
+        </Button>
       </div>
     </div>
   );

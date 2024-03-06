@@ -73,6 +73,7 @@ const Calendar = () => {
             <option value='Manicure'>Manicure</option>
             <option value='Pedicure'>Pedicure</option>
             <option value='Nail Art'>Nail Art</option>
+            <option value='Nail Art'>Eye Lashes</option>
           </select>
         </div>
       </Form>
