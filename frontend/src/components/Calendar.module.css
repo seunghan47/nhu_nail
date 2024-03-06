@@ -1,3 +1,26 @@
 .calendar {
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
+}
+
+.title {
+  font-size: 3rem;
+  color: #ec9131;
+}
+
+.date_box {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.date_box_item {
+  text-align: left;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.select_box {
+  height: 2.5rem;
+  width: 15rem;
+  padding-left: 1rem;
 }

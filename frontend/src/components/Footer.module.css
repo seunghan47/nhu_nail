@@ -5,3 +5,13 @@
   padding: 1.1rem 10rem;
   text-align: center;
 }
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer a:hover {
+  color: #1ecbe1;
+  text-decoration: underline;
+}

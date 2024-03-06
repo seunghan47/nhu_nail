@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
 import styles from "./Aboutme.module.css";
 import Button from "../components/Button";
 
 const Aboutme = () => {
   return (
     <div className={styles.about}>
-      <h1 className={styles.title}>About me</h1>
+      <h1 className={styles.title}>About Me</h1>
       <div className={styles.flex_container}>
         <p className={styles.flex_item}>
           Hi! I'm <span className={styles.span}>Nhu!</span> Your friendly nail enthusiast with over a decade of
