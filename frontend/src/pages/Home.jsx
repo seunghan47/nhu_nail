@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Home.module.css";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 // import Work from "../components/Work";
 
 const Home = () => {
@@ -28,10 +29,53 @@ const Home = () => {
           Hi, I'm Nhu! Welcome to my <span className={styles.span}>NAIL SHOP!</span>
         </h1>
         <p>
-          Discover the art of beautiful nails with our expert services, including pedicures, manicures, nail extensions,
-          and stunning nail art
+          Discover the art of beautiful nails with my expert services, including pedicures, manicures, nail extensions,
+          and stunning nail art. I have also been doing lots of leashes and you can call and apply for that separately
+          if you would like !
+          <br />
+          <br />
+          <span className={styles.service_span}>
+            <Link to='/Services'>Services I Offer</Link>
+          </span>
         </p>
-        <Button className={styles.button}>Book Today!</Button>
+      </div>
+      <div className={styles.expertise}>
+        <h1>My Expertise</h1>
+        <span className={styles.span_offer}>
+          <span className={styles.service_span}>
+            <h3>
+              <Link to='/Services'>What I Can Do</Link>
+            </h3>
+          </span>
+        </span>
+        <div className={styles.expertise_container}>
+          <div className={styles.expertise_item}>
+            <img
+              src='lashservice.png'
+              alt='lady getting her lashes done'
+              className={styles.image}
+            />
+            <h3>Lash Services</h3>
+            <p>
+              Lash Styling, Attcachment, Extensions, and More! <br /> Enjoy a Relaxing Lash Service
+            </p>
+          </div>
+          <div className={styles.expertise_item}>
+            <img
+              className={styles.image}
+              src='nailservice.webp'
+              alt='lady getting her nails done'
+            />
+            <h3>Nail Services</h3>
+            <p>
+              Manicure, Pedicure, Nail Art, and More! <br /> Enjoy a Relaxing Nail Service
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={styles.book}>
+        <h1>What are you waiting for ! Book an appointment with me now !</h1>
+        <Button>Book Here!</Button>
       </div>
     </div>
   );

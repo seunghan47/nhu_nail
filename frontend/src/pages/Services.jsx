@@ -1,9 +1,13 @@
-import React from "react";
+import { useEffect } from "react";
 import styles from "./Services.module.css";
 import Service from "../components/Service";
 import Button from "../components/Button";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className={styles.services}>
