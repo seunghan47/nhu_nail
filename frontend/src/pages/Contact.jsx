@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./Contact.module.css";
 import Button from "../components/Button";
 import { Form } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Contact = () => {
   const [results, setResult] = useState([]);

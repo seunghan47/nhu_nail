@@ -28,6 +28,11 @@ public class CustomerController {
         return customerService.getAllCustomers();
     }
 
+    @GetMapping("/getAll/{customer}")
+    public String getAllCustomers(@PathVariable String customer) {
+        return customerService.getAllCustomers().toString() + " " + customer;
+    }
+
     @GetMapping("/availableDates")
     public ResponseEntity<List<LocalDateTime>> getAvailableDates() {
         List<LocalDateTime> availableDates = customerService.getAvailableDates();
