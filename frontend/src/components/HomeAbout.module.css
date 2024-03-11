@@ -1,0 +1,44 @@
+.home_about {
+  background-color: white;
+  padding-top: 3rem;
+}
+
+.home_header {
+  font-size: 3rem;
+  color: #ec9131;
+  background-color: white;
+  text-align: center;
+}
+
+.home_about_container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 0rem 8rem 3rem 8rem;
+  color: #696969;
+}
+
+.home_about_container h1 {
+  font-size: 3rem;
+}
+.home_about_container h5 {
+  font-size: 1.4rem;
+}
+
+.home_about_container p {
+  font-size: 1.3rem;
+  font-family: cerebri_sansregular;
+}
+
+.home_about_container a {
+  font-size: 1.6rem;
+}
+
+.home_about_container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.home_about_item {
+  flex: 1;
+}

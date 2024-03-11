@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 import Button from "../components/Button";
 import { Link, NavLink } from "react-router-dom";
+import HomeAbout from "../components/HomeAbout";
 // import Work from "../components/Work";
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
           alt=''
         />
       </div>
+      <HomeAbout />
       <div className={styles.home}>
         <h1>
           Hi, I'm Nhu! Welcome to my <span className={styles.span}>NAIL SHOP!</span>

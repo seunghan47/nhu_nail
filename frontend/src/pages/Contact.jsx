@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Contact.module.css";
 import Button from "../components/Button";
 import { Form } from "react-router-dom";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const Contact = () => {
   const [results, setResult] = useState([]);
@@ -118,7 +118,7 @@ const Contact = () => {
         className={styles.image}
       ></img>
 
-      {/* <h1>
+      <h1>
         {results.map((result) => {
           return (
             <div key={result.id}>
@@ -130,7 +130,7 @@ const Contact = () => {
             </div>
           );
         })}
-      </h1> */}
+      </h1>
     </div>
   );
 };
