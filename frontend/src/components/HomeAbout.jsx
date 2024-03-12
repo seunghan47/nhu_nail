@@ -6,7 +6,12 @@ const HomeAbout = () => {
   return (
     <div className={styles.home_about}>
       <div className={styles.home_header}>
-        <h5> ABOUT ME </h5>
+        <h5> About Me </h5>
+        <span className={styles.home_header_sub}>
+          <h3>
+            <Link to='/Services'>What I Provide</Link>
+          </h3>
+        </span>
       </div>
       <div className={styles.home_about_container}>
         <div className={styles.home_about_item}>
@@ -39,7 +44,7 @@ const HomeAbout = () => {
             sure you get the best look that you deserve!
           </p>
           <br />
-          <span>
+          <span style={{ fontStyle: "italic" }}>
             <p>My goal is to provide great service with a fair price to all of us that needs it</p>
           </span>
           <br />

@@ -5,9 +5,26 @@
 
 .home_header {
   font-size: 3rem;
-  color: #ec9131;
+  color: black;
   background-color: white;
-  text-align: center;
+  text-align: left;
+  padding-left: 8rem;
+  margin: 0;
+}
+
+.home_header h5 {
+  margin: 0;
+}
+
+.home_header_sub {
+  text-decoration: underline;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+}
+
+.home_header_sub a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .home_about_container {
@@ -32,6 +49,12 @@
 
 .home_about_container a {
   font-size: 1.6rem;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+.home_about_container a:hover {
+  color: #ec9131;
 }
 
 .home_about_container img {

@@ -47,44 +47,6 @@
   color: #ec9131;
 }
 
-.service_span {
-  text-decoration: underline;
-  font-family: "Courier New", Courier, monospace;
-}
-
-.service_span a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.service_span:hover {
-  color: rgb(154, 59, 59);
-}
-
-.expertise {
-  padding: 3rem 10rem;
-  color: black;
-  font-size: 1.2rem;
-  text-align: center;
-  text-align: left;
-  background-color: #f7f7f7;
-}
-
-.expertise p {
-  font-size: 1rem;
-}
-
-.expertise_container {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 9rem;
-}
-
-.image {
-  width: 500px;
-  height: 30rem;
-}
-
 .book {
   padding: 7rem 4rem;
   text-align: center;
