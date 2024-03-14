@@ -16,8 +16,8 @@ const HomeAbout = () => {
       <div className={styles.home_about_container}>
         <div className={styles.home_about_item}>
           <h1>
-            <span style={{ textDecoration: "underline", color: "#ec9131" }}>Nhu's Nail</span> Where I bring out people's
-            beauty
+            <span style={{ textDecoration: "underline", color: "#ec9131" }}>Nhu's Nails</span> ~Nail~ Your Look, And
+            Flutter Your Lashes
           </h1>
           <p>
             Welcome to Nhu's Nails, where your beauty dreams come true. I create any nails/lash designs of your choice

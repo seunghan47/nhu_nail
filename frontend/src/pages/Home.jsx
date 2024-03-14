@@ -45,7 +45,7 @@ const Home = () => {
       <HomeServices />
       <div className={styles.book}>
         <h1>
-          <span className={styles.wait}>What are you waiting for ! </span>
+          <span className={styles.wait}>What Are You Waiting For</span>
           <br />
           Book an Appointment Now !
         </h1>
