@@ -27,25 +27,10 @@ const Home = () => {
         />
       </div>
       <HomeAbout />
-      {/* <div className={styles.home}>
-        <h1>
-          Hi, I'm Nhu! Welcome to my <span className={styles.span}>NAIL SHOP!</span>
-        </h1>
-        <p>
-          Discover the art of beautiful nails with my expert services, including pedicures, manicures, nail extensions,
-          and stunning nail art. I have also been doing lots of leashes and you can call and apply for that separately
-          if you would like !
-          <br />
-          <br />
-          <span className={styles.service_span}>
-            <Link to='/Services'>Services I Offer</Link>
-          </span>
-        </p>
-      </div> */}
       <HomeServices />
       <div className={styles.book}>
-        <h1>
-          <span className={styles.wait}>What Are You Waiting For</span>
+        <h1 style={{ marginBottom: "2rem" }}>
+          <span className={styles.wait}>What Are You Waiting For !!</span>
           <br />
           Book an Appointment Now !
         </h1>

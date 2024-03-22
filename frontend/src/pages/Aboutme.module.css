@@ -1,11 +1,16 @@
 .about {
-  padding: 3rem 10rem;
+  padding: 3rem 8rem;
   font-size: 1.5rem;
-  background-color: rgb(236, 235, 232);
+  background-color: white;
 }
 
+.title_section {
+  padding: 3rem 10rem;
+  text-align: center;
+  background-color: rgb(236, 235, 232);
+}
 .title {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #ec9131;
   text-transform: uppercase;
 }
@@ -13,7 +18,7 @@
 .flex_container {
   display: flex;
   justify-content: space-evenly;
-  /* flex-wrap: wrap; */
+  margin-bottom: 2rem;
 }
 
 .flex_container img {
