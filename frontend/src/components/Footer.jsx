@@ -7,7 +7,7 @@ const Footer = () => {
       <div className={styles.footer}>
         © Copy Righted 2024 | All rights reserved | Created by{" "}
         <a
-          href='https://www.paulim.click'
+          href='https://www.paulim.com'
           target='_blank'
           rel='noreferrer'
         >

@@ -46,13 +46,17 @@
 
 .section_container_item h1 {
   font-size: 4rem;
+  display: block;
   margin: 0;
+  margin-bottom: 1rem;
 }
-/* 
-.section_container_item p {
-  font-size: 1rem;
-} */
 
 .description {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.pricing {
+  font-size: 1.3rem;
 }

@@ -30,14 +30,16 @@ const Services = () => {
                 polish application.
               </p>
             </span>
-            <p>
-              <strong>Services:</strong>
-              <br />
-              - Basic manicure: $20
-              <br />
-              - Gel manicure: $30
-              <br />- French manicure: $25
-            </p>
+            <span className={styles.pricing}>
+              <p>
+                <strong>Services:</strong>
+                <br />
+                - Basic manicure: $20
+                <br />
+                - Gel manicure: $30
+                <br />- French manicure: $25
+              </p>
+            </span>
           </div>
         </section>
         <section className={styles.section_container}>
@@ -55,14 +57,16 @@ const Services = () => {
                 massage, and nail polish application.
               </p>
             </span>
-            <p>
-              <strong>Services:</strong>
-              <br />
-              - Basic pedicure: $25
-              <br />
-              - Deluxe pedicure: $40
-              <br />- Spa pedicure: $50
-            </p>
+            <span className={styles.pricing}>
+              <p>
+                <strong>Services:</strong>
+                <br />
+                - Basic pedicure: $25
+                <br />
+                - Deluxe pedicure: $40
+                <br />- Spa pedicure: $50
+              </p>
+            </span>
           </div>
         </section>
         <section className={styles.section_container}>
@@ -80,14 +84,16 @@ const Services = () => {
                 curliness of natural eyelashes.
               </p>
             </span>
-            <p>
-              <strong>Services:</strong>
-              <br />
-              - Classic lash extensions: $80
-              <br />
-              - Volume lash extensions: $100
-              <br />- Lash lift and tint: $60
-            </p>
+            <span className={styles.pricing}>
+              <p>
+                <strong>Services:</strong>
+                <br />
+                - Classic lash extensions: $80
+                <br />
+                - Volume lash extensions: $100
+                <br />- Lash lift and tint: $60
+              </p>
+            </span>
           </div>
         </section>
         <section className={styles.section_container}>
@@ -105,14 +111,16 @@ const Services = () => {
                 their creativity and style through unique nail designs.
               </p>
             </span>
-            <p>
-              <strong>Services:</strong>
-              <br />
-              - Nail painting: $15 and up
-              <br />
-              - Nail stamping: $20 and up
-              <br />- 3D nail art: $30 and up
-            </p>
+            <span className={styles.pricing}>
+              <p>
+                <strong>Services:</strong>
+                <br />
+                - Nail painting: $15 and up
+                <br />
+                - Nail stamping: $20 and up
+                <br />- 3D nail art: $30 and up
+              </p>
+            </span>
           </div>
         </section>
         <Button>Book Now!</Button>
