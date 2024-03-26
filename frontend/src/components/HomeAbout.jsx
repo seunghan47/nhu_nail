@@ -8,15 +8,13 @@ const HomeAbout = () => {
       <div className={styles.home_header}>
         <h5> About Me </h5>
         <span className={styles.home_header_sub}>
-          <h3>
-            <Link to='/Services'>What I Provide</Link>
-          </h3>
+          <h3>{/* <Link to='/Services'>What I Provide</Link> */}</h3>
         </span>
       </div>
       <div className={styles.home_about_container}>
         <div className={styles.home_about_item}>
           <h1>
-            <span style={{ textDecoration: "underline", color: "#ec9131" }}>Nhu's Nails</span> ~Nail~ Your Look, And
+            <span style={{ textDecoration: "underline", color: "#ec9131" }}>Nhu's Nails:</span> Nail Your Look, And
             Flutter Your Lashes
           </h1>
           <p>
