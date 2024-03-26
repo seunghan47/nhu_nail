@@ -1,39 +1,26 @@
 .about {
-  padding: 3rem 8rem;
-  font-size: 1.5rem;
-  background-color: white;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
-.title_section {
-  padding: 3rem 10rem;
+.heading {
   text-align: center;
+  padding: 3rem 10rem;
   background-color: rgb(236, 235, 232);
+  color: #ec9131;
 }
-.title {
+
+.heading h1 {
   font-size: 4rem;
-  color: #ec9131;
-  text-transform: uppercase;
 }
 
-.flex_container {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 2rem;
-}
-
-.flex_container img {
-  width: 20rem;
-  height: 20rem;
-}
-
-.flex_item {
-  padding-right: 5rem;
-}
-
-.span {
-  color: #ec9131;
+.content {
 }
 
 .vietnamese {
-  border-radius: 10%;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
 }
