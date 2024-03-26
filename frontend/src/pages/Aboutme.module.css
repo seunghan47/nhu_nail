@@ -17,10 +17,21 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 12rem;
+  text-align: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-.vietnamese {
+.content img {
   border-radius: 50%;
-  width: 7rem;
-  height: 7rem;
+  width: 13rem;
+  height: 13rem;
+}
+
+.content p {
+  font-size: 1.8rem;
+  line-height: 150%;
 }

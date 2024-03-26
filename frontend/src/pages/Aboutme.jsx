@@ -9,12 +9,18 @@ const Aboutme = () => {
       </div>
       <main className={styles.content}>
         <img
-          className={styles.vietnamese}
           src='vietnamese.jpeg'
           alt="nhu's face"
         />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Odio euismod lacinia at quis risus sed. Amet purus gravida quis blandit turpis cursus. Enim ut
+          sem viverra aliquet eget sit amet. Tincidunt lobortis feugiat vivamus at augue eget. Adipiscing elit
+          pellentesque habitant morbi tristique senectus et. Cum sociis natoque penatibus et magnis dis parturient mo
+          vitae tortor. Non odio euismod.
+        </p>
+        <Button>Book an appointment</Button>
       </main>
-      <Button>Book an appointment</Button>
     </div>
   );
 };
