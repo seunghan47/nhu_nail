@@ -1,11 +1,10 @@
-import React, { useState } from "react";
 import styles from "./Contact.module.css";
 import Button from "../components/Button";
 import { Form } from "react-router-dom";
 // import { Link } from "react-scroll";
 
 const Contact = () => {
-  const [results, setResult] = useState([]);
+  // const [results, setResult] = useState([]);
   async function onFormSubmit(e) {
     e.preventDefault();
 
@@ -13,7 +12,7 @@ const Contact = () => {
     const data = Object.fromEntries(fd.entries());
 
     try {
-      const response = await fetch("http://localhost:8080/message/add", {
+      const response = await fetch("http://34.229.57.18:8080/message/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -30,18 +29,18 @@ const Contact = () => {
       console.log("Error: " + error.message);
     }
 
-    try {
-      const getResponse = await fetch("http://localhost:8080/message/getMessage");
+    // try {
+    //   const getResponse = await fetch("http://localhost:8080/message/getMessage");
 
-      if (!getResponse.ok) {
-        console.log(getResponse);
-        throw new Error("fetch unsuccessful");
-      }
-      const data = await getResponse.json();
-      setResult(data);
-    } catch (error) {
-      console.log(error);
-    }
+    //   if (!getResponse.ok) {
+    //     console.log(getResponse);
+    //     throw new Error("fetch unsuccessful");
+    //   }
+    //   const data = await getResponse.json();
+    //   setResult(data);
+    // } catch (error) {
+    //   console.log(error);
+    // }
   }
 
   return (
@@ -118,7 +117,7 @@ const Contact = () => {
         className={styles.image}
       ></img>
 
-      <h1>
+      {/* <h1>
         {results.map((result) => {
           return (
             <div key={result.id}>
@@ -130,7 +129,7 @@ const Contact = () => {
             </div>
           );
         })}
-      </h1>
+      </h1> */}
     </div>
   );
 };
