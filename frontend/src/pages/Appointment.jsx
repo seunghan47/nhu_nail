@@ -1,4 +1,4 @@
-import Calendar from "../components/Calendar";
+import Calendar from "../components/AppointmentForm";
 import styles from "./Appointment.module.css";
 import Button from "../components/Button";
 

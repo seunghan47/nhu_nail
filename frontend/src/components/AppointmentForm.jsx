@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
-import styles from "./Calendar.module.css";
+import styles from "./AppointmentForm.module.css";
 import { Form } from "react-router-dom";
 import "react-datepicker/dist/react-datepicker.css";
 
-const Calendar = () => {
+const AppointmentForm = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
   const [selectedService, setSelectedService] = useState(null);
@@ -23,10 +23,6 @@ const Calendar = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Send reservation data (selectedDate and selectedTime) to backend for processing
-    console.log("Reservation Date:", selectedDate);
-    console.log("Reservation Time:", selectedTime);
-    // Add logic here to send reservation data to backend
   };
 
   return (
@@ -60,6 +56,8 @@ const Calendar = () => {
             <option value='10:00 AM'>10:00 AM</option>
             <option value='12:00 PM'>12:00 PM</option>
             <option value='02:00 PM'>02:00 PM</option>
+            <option value='04:00 PM'>04:00 PM</option>
+            <option value='06:00 PM'>06:00 PM</option>
           </select>
         </div>
         <div className={styles.date_box_item}>
@@ -81,25 +79,4 @@ const Calendar = () => {
   );
 };
 
-export default Calendar;
-
-// useEffect(() => {
-//   const fetchAvailableDates = async () => {
-//     try {
-//       const response = await fetch("http://localhost:8080/customer/getAll");
-//       const customers = response.data;
-//       setCustomers(customers || []);
-//     } catch (error) {
-//       console.error("Error fetching available dates: !!!!!", error);
-//     }
-//   };
-
-//   fetchAvailableDates();
-// }, []);
-// return (
-//   <div>
-//     {customers.map((customer) => (
-//       <h1>{JSON.stringify(customer)}</h1>
-//     ))}
-//   </div>
-// );
+export default AppointmentForm;
