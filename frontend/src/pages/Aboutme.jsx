@@ -1,5 +1,6 @@
 import styles from "./Aboutme.module.css";
 import Button from "../components/Button";
+import { NavLink } from "react-router-dom";
 
 const Aboutme = () => {
   return (
@@ -19,7 +20,9 @@ const Aboutme = () => {
           pellentesque habitant morbi tristique senectus et. Cum sociis natoque penatibus et magnis dis parturient mo
           vitae tortor. Non odio euismod.
         </p>
-        <Button>Book an appointment</Button>
+        <Button>
+          <NavLink to='/Appointment'>Book Here!</NavLink>
+        </Button>
       </main>
     </div>
   );

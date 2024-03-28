@@ -3,6 +3,8 @@ import Button from "../components/Button";
 import { Form } from "react-router-dom";
 // import { Link } from "react-scroll";
 
+const URL = "http://34.229.57.18:8080/message/add";
+
 const Contact = () => {
   // const [results, setResult] = useState([]);
   async function onFormSubmit(e) {
@@ -12,7 +14,7 @@ const Contact = () => {
     const data = Object.fromEntries(fd.entries());
 
     try {
-      const response = await fetch("http://34.229.57.18:8080/message/add", {
+      const response = await fetch(URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -28,19 +30,6 @@ const Contact = () => {
     } catch (error) {
       console.log("Error: " + error.message);
     }
-
-    // try {
-    //   const getResponse = await fetch("http://localhost:8080/message/getMessage");
-
-    //   if (!getResponse.ok) {
-    //     console.log(getResponse);
-    //     throw new Error("fetch unsuccessful");
-    //   }
-    //   const data = await getResponse.json();
-    //   setResult(data);
-    // } catch (error) {
-    //   console.log(error);
-    // }
   }
 
   return (
@@ -116,20 +105,6 @@ const Contact = () => {
         alt='questions'
         className={styles.image}
       ></img>
-
-      {/* <h1>
-        {results.map((result) => {
-          return (
-            <div key={result.id}>
-              <h1>{result.name}</h1>
-              <p>{result.email}</p>
-              <p>{result.phone_number}</p>
-              <p>{result.message}</p>
-              <p>{result.id}</p>
-            </div>
-          );
-        })}
-      </h1> */}
     </div>
   );
 };

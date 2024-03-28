@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import styles from "./Services.module.css";
 // import Service from "../components/Service";
 import Button from "../components/Button";
+import { NavLink } from "react-router-dom";
 
 const Services = () => {
   useEffect(() => {
@@ -123,7 +124,9 @@ const Services = () => {
             </span>
           </div>
         </section>
-        <Button>Book Now!</Button>
+        <Button>
+          <NavLink to='/Appointment'>Book Here!</NavLink>
+        </Button>
       </main>
     </>
   );
