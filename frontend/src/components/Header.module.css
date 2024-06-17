@@ -1,14 +1,14 @@
-.logo {
-  width: 7rem;
-  height: 4rem;
-  margin-left: 5rem;
-}
-
 .nav_container {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 2rem;
   align-items: center;
+}
+
+.nav_container img {
+  width: 7rem;
+  height: 4rem;
+  margin-left: 5rem;
 }
 
 .item_container {

@@ -13,13 +13,34 @@ const Aboutme = () => {
           src='vietnamese.jpeg'
           alt="nhu's face"
         />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Odio euismod lacinia at quis risus sed. Amet purus gravida quis blandit turpis cursus. Enim ut
-          sem viverra aliquet eget sit amet. Tincidunt lobortis feugiat vivamus at augue eget. Adipiscing elit
-          pellentesque habitant morbi tristique senectus et. Cum sociis natoque penatibus et magnis dis parturient mo
-          vitae tortor. Non odio euismod.
-        </p>
+        <div className={styles.aboutText}>
+          <h1>Meet Nhu, Your Total Beauty Specialist! </h1>
+          <p>
+            Hi there! I'm Nhu, and I'm passionate about helping you look and feel your most beautiful. As a skilled
+            beauty professional with a love for all things nails, makeup, and pampering, I offer a wide range of
+            services to enhance your natural beauty from head to toe.
+          </p>
+          <h1>More Than Just Nails: </h1>
+          <p>
+            While I take pride in creating stunning nail designs and providing relaxing pedicures, my expertise extends
+            beyond fingertips. I can also help you achieve flawless makeup looks for any occasion, whether it's a
+            dramatic smoky eye for a night out or a soft, natural glow for everyday wear.
+          </p>
+          <h1> What Sets Me Apart: Versatility</h1>
+          <p>
+            I'm skilled in a variety of techniques, allowing me to cater to your unique style and preferences. Attention
+            to Detail: I believe in meticulous work and ensuring every aspect of your look is flawless. Passion &
+            Creativity: I'm constantly learning and experimenting with new trends to offer you the latest and greatest
+            beauty services. Relaxing Experience: My goal is to create a calming and enjoyable experience for you during
+            your appointment.
+          </p>
+          <h1>Ready to Pamper Yourself? </h1>
+          <p>
+            Whether you're looking for a complete makeover or a relaxing spa treatment, I'm here to help you achieve
+            your beauty goals. Let's discuss your needs and create a personalized plan to make you feel confident and
+            radiant!
+          </p>
+        </div>
         <Button>
           <NavLink to='/Appointment'>Book Here!</NavLink>
         </Button>
